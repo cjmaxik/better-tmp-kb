@@ -1,0 +1,133 @@
+version: 5.1.0
+variant: default
+logo:
+    text: TMP Better Knowledge Base
+head:
+    favicon: /img/favicon.svg
+    manifest:
+        name: TMP Better Knowledge Base
+        short_name: TMP Better KB
+        start_url:
+        theme_color:
+        background_color:
+        display: standalone
+        icons:
+            -
+                src: ''
+                sizes: ''
+                type:
+    open_graph:
+        title: TMP Better Knowledge Base
+        type: blog
+        url: 'https://tmp-kb.cjmaxik.ru'
+        image:
+        site_name: TMP Better Knowledge Base
+        author: CJMAXiK and contributors
+        description:
+        twitter_card:
+        twitter_id:
+        twitter_site:
+        google_plus:
+        fb_admins:
+        fb_app_id:
+    structured_data:
+        title:
+        description:
+        url:
+        author:
+        publisher:
+        publisher_logo:
+        image:
+    meta:
+        - ''
+    rss:
+navbar:
+    menu:
+        Home: /
+        Categories: /categories
+        Tags: /tags
+#        About: /about
+    links:
+        GitHub:
+            icon: fab fa-github
+            url: https://github.com/cjmaxik/better-tmp-kb
+footer:
+    links:
+        Licensed under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0):
+            icon: fab fa-creative-commons
+            url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+        GitHub:
+            icon: fab fa-github
+            url: https://github.com/cjmaxik/better-tmp-kb
+article:
+    highlight:
+        theme: atom-one-light
+        clipboard: true
+        fold: unfolded
+    readtime: false
+    update_time: auto
+    licenses:
+        'CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+search:
+    type: insight
+    index_pages: true
+#comment:
+#    type: disqus
+#    shortname: ''
+#donates:
+#    -
+#        type: Links
+#        title: 'DonationAlerts'
+#        links: 'https://www.donationalerts.com/r/cjmaxik'
+#share:
+#    type:
+#    install_url: ''
+sidebar:
+    left:
+        sticky: true
+    right:
+        sticky: true
+widgets:
+    -
+        position: left
+        type: toc
+        index: true
+        collapsed: false
+        depth: 3
+    -
+        position: left
+        type: categories
+    -
+        position: left
+        type: links
+        links:
+            TruckersMP Knowledge Base: https://truckersmp.com/knowledge-base
+            TruckersMP Support: https://truckersmp.com/support
+            CJMAXiK: https://cjmaxik.ru
+#    -
+#        position: left
+#        type: archives
+    -
+        position: left
+        type: tags
+        order_by: name
+        amount: 100
+        show_count: true
+plugins:
+    animejs: true
+    back_to_top: true
+    cookie_consent:
+        type: info
+        theme: edgeless
+        static: false
+        position: bottom-left
+        policyLink: https://www.cookiesandyou.com/
+    gallery: true
+    katex: false
+    mathjax: false
+    outdated_browser: false
+    progressbar: true
+providers:
+    cdn: cdnjs
+    fontcdn: google
+    iconcdn: fontawesome
