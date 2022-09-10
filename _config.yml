@@ -14,8 +14,8 @@ timezone: 'Etc/UTC'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://tmp-kb.cjmaxik.ru
-#permalink: :lang/:category/:title/
-permalink: :lang/:id/
+permalink: :lang/:category/:title/
+#permalink: :lang/:id/
 permalink_defaults:
   lang: ru
 pretty_urls:
