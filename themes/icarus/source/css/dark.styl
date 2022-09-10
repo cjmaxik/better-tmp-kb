@@ -1,0 +1,101 @@
+// Base colors
+$white ?= #fff
+$white-bis ?= #ccc
+$grey ?= #848484
+$black ?= #000
+$black-bis ?= #050a0e
+$blue ?= #007bff
+$indigo ?= #6610f2
+$purple ?= #6f42c1
+$pink ?= #e83e8c
+$red ?= #dc3545
+$orange ?= #fd7e14
+$yellow ?= #ffc107
+$green ?= #28a745
+$teal ?= #20c997
+$cyan ?= #17a2b8
+$primary ?= $green
+$info ?= $blue
+$success ?= $green
+$warning ?= $orange
+$danger ?= $red
+
+// Main
+$scheme-main ?= #1c1c1c
+$text ?= $white-bis
+$text-strong ?= $white
+$body-background-color ?= #252525
+
+// Links
+$link ?= #72c02c
+$link-hover ?= darken($link, 20%)
+
+// Navbar
+$navbar-background-color ?= #1c1c1c
+$navbar-item-hover-background-color ?= #252525
+$navbar-item-active-color ?= $link
+
+// Menu
+$menu-item-hover-background-color ?= #252525
+
+// Footer
+$footer-background-color ?= #1c1c1c
+
+// Tags
+$tag-color ?= $white-bis
+$tag-background-color ?= #292929
+
+// Search box
+$searchbox-bg-container ?= #1c1c1c
+$searchbox-border ?= #252525
+$searchbox-bg-input ?= $searchbox-bg-container
+$searchbox-bg-close-hover ?= $grey
+$searchbox-bg-close-active ?= $searchbox-bg-close-hover
+$searchbox-bg-result-item-hover ?= $black
+$searchbox-bg-result-item-active ?= $link
+
+// Menu list border
+$menu-list-border-left ?= 1px solid $grey
+$menu-item-active-background-color ?= #252525
+
+// Import the default style
+@import 'style'
+
+// Button
+article
+  &.article
+    .article-more
+      @extend .button.is-dark
+
+    .article-meta
+      text-transform: initial !important;
+
+      .level-left
+        .level-item:not(:last-of-type)
+          padding-right: 10px;
+          border-right: 1px solid $grey
+
+// Blockquote
+.content
+  blockquote
+    background: #252525
+    border-left-color: $gray
+
+// Licensing box
+.article-licensing
+  background: $black-ter
+
+// Back-to-top
+#back-to-top
+  background-color: $black-ter
+
+// Navbar
+a.navbar-item.navbar-logo
+  @extend .has-text-weight-bold
+
+// Tags
+.widget
+  .tags
+    .tag
+      background: #292929 !important
+      color: #999

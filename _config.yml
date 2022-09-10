@@ -104,12 +104,20 @@ include_markdown:
   dir: source/_partials   # Base directory of template markdown
   verbose : true          # If you want to check the path of markdown that use <!-- md --> tag , please set the true.
 
+# CDN
 cdn:
   server: https://images.weserv.nl
   use_webp: true
   native: false # use cloudflare native image resize
   max_width:
   exclude_domains:
+
+# Browsersync
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
+  instanceName: "uniqueString"
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

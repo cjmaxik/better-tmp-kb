@@ -1,5 +1,5 @@
 version: 5.1.0
-variant: default
+variant: dark
 logo:
     text: TMP Better Knowledge Base
 head:
@@ -7,7 +7,7 @@ head:
     manifest:
         name: TMP Better Knowledge Base
         short_name: TMP Better KB
-        start_url:
+        start_url: https://tmp-kb.cjmaxik.ru
         theme_color:
         background_color:
         display: standalone
@@ -19,11 +19,11 @@ head:
     open_graph:
         title: TMP Better Knowledge Base
         type: blog
-        url: 'https://tmp-kb.cjmaxik.ru'
+        url: https://tmp-kb.cjmaxik.ru
         image:
         site_name: TMP Better Knowledge Base
         author: CJMAXiK and contributors
-        description:
+        description: This Knowledge Base is a comprehensive TruckersMP manual, including a rework of the official Knowledge Base.
         twitter_card:
         twitter_id:
         twitter_site:
