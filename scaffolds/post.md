@@ -1,6 +1,7 @@
 ---
 title: {{ title }}
 description: {{ title }}
+lang: {{ lang }}
 date: {{ date }}
 updated: 
 tags: 

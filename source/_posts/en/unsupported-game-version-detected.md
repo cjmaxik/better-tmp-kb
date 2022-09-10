@@ -1,6 +1,8 @@
 ---
+id: 1
 title: Unsupported game version detected
 description: Fix Unsupported game version detected in TruckersMP
+lang: en
 date: 2022-09-10 14:58:23
 updated:
 toc: true

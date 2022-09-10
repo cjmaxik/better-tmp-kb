@@ -1,4 +1,4 @@
-# TruckersMP Knowledge Base, but better
+# Community Knowledge Base for TruckersMP
 > WORK IN PROGRESS!
 
 ## What is this Wiki?

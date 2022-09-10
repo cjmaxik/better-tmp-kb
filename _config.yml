@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: TMP Better Knowledge Base
+title: Community Knowledge Base for TruckersMP
 subtitle: ''
 description: ''
 keywords:
@@ -14,8 +14,10 @@ timezone: 'Etc/UTC'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://tmp-kb.cjmaxik.ru
-permalink: :category/:title/
+#permalink: :lang/:category/:title/
+permalink: :lang/:id/
 permalink_defaults:
+  lang: ru
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: false # Set to false to remove trailing '.html' from permalinks
@@ -31,7 +33,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :lang/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
