@@ -14,10 +14,10 @@ timezone: 'Etc/UTC'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://tmp-kb.cjmaxik.ru
-permalink: :lang/:category/:title/
-#permalink: :lang/:id/
+#permalink: :lang/:category/:title/
+permalink: :lang/:abbrlink/
 permalink_defaults:
-  lang: ru
+  lang: en
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: false # Set to false to remove trailing '.html' from permalinks
@@ -120,6 +120,15 @@ browsersync:
   ghostMode:
     scroll: true
   instanceName: "uniqueString"
+
+# abbrlink config
+abbrlink:
+  alg: crc16      #support crc16(default) and crc32
+  rep: dec        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default)
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

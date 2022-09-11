@@ -14,4 +14,5 @@ Use **Categories** block at the left (or at the bottom on mobile). There is even
 If you have something to add up or correct, use [Pull Requests](https://github.com/cjmaxik/better-tmp-kb/pulls) feature.
 
 ### A word from the creator
-Hello, my name is [CJMAXiK](https://cjmaxik.ru). I am playing TruckersMP from the moment it appeared. I was actually [working for TruckersMP for 6.5 years](https://truckersmp.com/user/3861/) in various positions, including Web Developer. This Wiki exists because I am not satisfied with how TruckersMP manages its Knowledge Base articles - they are often stale, incomplete or incorrect.
+Hello, my name is [CJMAXiK](https://cjmaxik.ru). I am playing TruckersMP from the moment it appeared. I was actually [working for TruckersMP for 6.5 years](https://truckersmp.com/user/3861/) in various positions, including Web Developer. This KB exists because I am not satisfied with how TruckersMP manages its Knowledge Base articles - they are often stale, incomplete or incorrect.<br/>
+This does not mean TruckersMP Staff doesn't do a good job though :)

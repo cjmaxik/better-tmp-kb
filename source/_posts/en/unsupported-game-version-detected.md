@@ -3,17 +3,20 @@ id: 1
 title: Unsupported game version detected
 description: Fix Unsupported game version detected in TruckersMP
 lang: en
-date: 2022-09-10 14:58:23
-updated:
 toc: true
 tags:
-- English
-- Common errors
-- Launcher
-- Doesn't launch
+  - English
+  - Common errors
+  - Launcher
+  - Doesn't launch
 categories:
-- ['English', 'Launcher', 'Common errors']
+  - - English
+    - Launcher
+    - Common errors
 author: CJMAXiK
+abbrlink: 39952
+date: 2022-09-10 14:58:23
+updated:
 ---
 ![](https://i.imgur.com/IaxM7Rm.png)
 <!-- more -->
