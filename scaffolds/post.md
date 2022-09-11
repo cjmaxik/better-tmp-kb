@@ -1,9 +1,10 @@
 ---
+contentId: {{ slug }} 
 title: {{ title }}
 description: {{ title }}
 lang: {{ lang }}
 date: {{ date }}
-updated: 
+updated: {{ date }}
 tags: 
     -
 toc: true

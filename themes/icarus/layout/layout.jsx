@@ -20,11 +20,9 @@ module.exports = class extends Component {
                 <Navbar config={config} helper={helper} page={page} />
                 <section class="section">
                     <div class="container">
-                        <article class="message is-danger is-dark">
-                            <div class="message-body">
-                                <p>This Knowledge Base is a work in progress...</p>
-                            </div>
-                        </article>
+                        <div className="notification is-warning">
+                            This Knowledge Base is a work in progress... Permalinks might change.
+                        </div>
                         <div class="columns">
                             <div class={classname({
                                 column: true,

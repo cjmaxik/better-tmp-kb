@@ -3,6 +3,7 @@ const { Component, Fragment } = require('inferno');
 const Share = require('./share');
 const Donates = require('./donates');
 const Comment = require('./comment');
+const Languages = require('../custom/languages');
 const ArticleLicensing = require('hexo-component-inferno/lib/view/misc/article_licensing');
 
 /**
@@ -82,6 +83,8 @@ module.exports = class extends Component {
                             }}></span> : null}
                         </div>
                     </div> : null}
+                    {/* Languages */}
+                    <Languages helper={helper} />
                     {/* Title */}
                     {page.title !== '' ? <h1 class="title is-3 is-size-4-mobile">
                         {index ? <a class="link-muted" href={url_for(page.link || page.path)}>{page.title}</a> : page.title}
