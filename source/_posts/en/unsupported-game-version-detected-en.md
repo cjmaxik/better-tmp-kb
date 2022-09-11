@@ -1,5 +1,4 @@
 ---
-id: 1
 title: Unsupported game version detected
 description: Fix Unsupported game version detected in TruckersMP
 lang: en
@@ -14,7 +13,6 @@ categories:
     - Launcher
     - Common errors
 author: CJMAXiK
-abbrlink: 39952
 date: 2022-09-10 14:58:23
 updated:
 ---
@@ -29,11 +27,12 @@ updated:
 >
 > Do you need help with changing the game version?
 
-# Prerequisites
+# Before we begin
 1. This article has **THREE** solutions to this issue. You must try them one by one until the issue is fixed. Some steps might repeat, but the solutions are overall different from each other. Please follow the steps precisely even if you know what are you doing.
 2. Close the launcher before proceeding further. 
 
 # Solutions
+
 ## Change game version
 <!-- md en/launcher-solutions/change-game-version.md -->
 

@@ -91,12 +91,12 @@ widgets:
     -
         position: left
         type: toc
-        index: true
+        index: false
         collapsed: false
-        depth: 3
-    -
-        position: left
-        type: categories
+        depth: 5
+#    -
+#        position: left
+#        type: categories
     -
         position: left
         type: links

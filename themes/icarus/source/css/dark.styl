@@ -1,3 +1,7 @@
+// Fonts
+$family-sans-serif ?= Ubuntu, Roboto, 'Open Sans', sans-serif
+$family-code ?= 'Roboto Mono', monospace
+
 // Base colors
 $white ?= #fff
 $white-bis ?= #ccc
@@ -89,8 +93,8 @@ article
   background: $black-ter
 
 // Back-to-top
-#back-to-top
-  background-color: $black-ter
+//#back-to-top
+//  background-color: $black-ter
 
 // Navbar
 a.navbar-item.navbar-logo
@@ -102,3 +106,24 @@ a.navbar-item.navbar-logo
     .tag
       background: #292929 !important
       color: #999
+
+
+// Code blocks
+article.article .content code
+  background-color: #252525
+  padding: 0.1em 0.5em 0.1em
+  border-radius: 1rem
+
+article img
+  padding: 0.5em
+
+
+// HR
+hr
+  background-color: #252525
+
+// Lists
+.content ul
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;

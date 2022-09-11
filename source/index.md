@@ -8,7 +8,7 @@ author: CJMAXiK
 We are trying to make a comprehensive TruckersMP manual, including a rework of the official Knowledge Base.
 
 ## How to navigate?
-Use **Categories** block at the left (or at the bottom on mobile). There is even a search - top right!
+Click [here](/categories) to see all the available categories. There is even a search - top right!
 
 ## How to help us?
 If you have something to add up or correct, use [Pull Requests](https://github.com/cjmaxik/better-tmp-kb/pulls) feature.

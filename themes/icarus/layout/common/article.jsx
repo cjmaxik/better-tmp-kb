@@ -87,8 +87,15 @@ module.exports = class extends Component {
                     <Languages helper={helper} />
                     {/* Title */}
                     {page.title !== '' ? <h1 class="title is-3 is-size-4-mobile">
+                        {page.incomplete && index ?
+                          <span className="tag is-danger mr-2">INCOMPLETE</span>
+                        : null}
                         {index ? <a class="link-muted" href={url_for(page.link || page.path)}>{page.title}</a> : page.title}
                     </h1> : null}
+                    {/* Incomplete notification */}
+                    {page.incomplete && !index ? <div className="notification is-danger is-bold">
+                        This article is incomplete! Please proceed with the caution!
+                    </div> : null}
                     {/* Content/Excerpt */}
                     <div class="content" dangerouslySetInnerHTML={{ __html: index && page.excerpt ? page.excerpt : page.content }}></div>
                     {/* Licensing block */}
