@@ -9,19 +9,12 @@ class Footer extends Component {
             siteUrl,
             siteTitle,
             siteYear,
-            author,
-            links,
-            showVisitorCounter,
-            visitorCounterTitle
+            links
         } = this.props;
 
         let footerLogo = '';
         if (logo) {
-            if (logo.text) {
-                footerLogo = logo.text;
-            } else {
-                footerLogo = <img src={logoUrl} alt={siteTitle} height="28" />;
-            }
+            footerLogo = <img src={logoUrl} alt={siteTitle} height="28" />;
         } else {
             footerLogo = siteTitle;
         }
@@ -31,15 +24,14 @@ class Footer extends Component {
                 <div class="level">
                     <div class="level-start">
                         <a class="footer-logo is-block mb-2" href={siteUrl}>
-                            {footerLogo}
+                            {footerLogo}<span className="is-hidden-mobile">&nbsp;{siteTitle}</span>
                         </a>
                         <p class="is-size-7">
-                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
-                            &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
-                            <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
-                            {showVisitorCounter ? <br /> : null}
-                            {showVisitorCounter ? <span id="busuanzi_container_site_uv"
-                                dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
+                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear}` }}/>&nbsp;CJMAXiK&nbsp;and&nbsp;contributors.&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;custom <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>.&nbsp;Hosted with <a href="https://pages.cloudflare.com">Cloudflare Pages</a>.
+                            <br/><br/>
+                            <span class="is-hidden-mobile is-italic">
+                                This website is not in any way, shape or form affiliated or linked to TruckersMP&nbsp;Team and SCS&nbsp;Software.<br/>All product and company names are trademarks or registered trademarks of their respective holders.
+                            </span>
                         </p>
                     </div>
                     <div class="level-end">
@@ -62,8 +54,8 @@ class Footer extends Component {
 
 module.exports = cacheComponent(Footer, 'common.footer', props => {
     const { config, helper } = props;
-    const { url_for, _p, date } = helper;
-    const { logo, title, author, footer, plugins } = config;
+    const { url_for, date } = helper;
+    const { logo, title, author, footer } = config;
 
     const links = {};
     if (footer && footer.links) {
@@ -78,13 +70,11 @@ module.exports = cacheComponent(Footer, 'common.footer', props => {
 
     return {
         logo,
-        logoUrl: url_for(logo),
+        logoUrl: url_for(logo.image),
         siteUrl: url_for('/'),
         siteTitle: title,
         siteYear: date(new Date(), 'YYYY'),
         author,
-        links,
-        showVisitorCounter: plugins && plugins.busuanzi === true,
-        visitorCounterTitle: _p('plugin.visitor_count', '<span id="busuanzi_value_site_uv">0</span>')
+        links
     };
 });

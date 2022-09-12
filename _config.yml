@@ -113,6 +113,8 @@ cdn:
   native: false # use cloudflare native image resize
   max_width:
   exclude_domains:
+#    - https://tmp-kb.cjmaxik.ru
+#    - http://localhost
 
 # Browsersync
 browsersync:

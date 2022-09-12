@@ -2,6 +2,7 @@ version: 5.1.0
 variant: dark
 logo:
     text: Community Knowledge Base for TruckersMP
+    image: /img/favicon.svg
 head:
     favicon: /img/favicon.svg
     manifest:

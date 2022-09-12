@@ -134,13 +134,13 @@ module.exports = class extends Component {
 
             {typeof open_graph === 'object' && open_graph !== null ? <OpenGraph
                 type={open_graph.type || (is_post(page) ? 'article' : 'website')}
-                title={open_graph.title || page.title || config.title}
+                title={page.title || open_graph.title || config.title}
                 date={page.date}
                 updated={page.updated}
-                author={open_graph.author || config.author}
-                description={open_graph.description || page.description || page.excerpt || page.content || config.description}
+                author={page.author || open_graph.author || config.author}
+                description={page.description || page.excerpt || page.content || open_graph.description || config.description}
                 keywords={(page.tags && page.tags.length ? page.tags : undefined) || config.keywords}
-                url={open_graph.url || page.permalink || url}
+                url={page.permalink || url || open_graph.url}
                 images={openGraphImages}
                 siteName={open_graph.site_name || config.title}
                 language={language}
@@ -152,10 +152,10 @@ module.exports = class extends Component {
                 facebookAppId={open_graph.fb_app_id} /> : null}
 
             {typeof structured_data === 'object' && structured_data !== null ? <StructuredData
-                title={structured_data.title || page.title || config.title}
-                description={structured_data.description || page.description || page.excerpt || page.content || config.description}
-                url={structured_data.url || page.permalink || url}
-                author={structured_data.author || config.author}
+                title={page.title || structured_data.title || config.title}
+                description={page.description || page.excerpt || page.content || structured_data.description || config.description}
+                url={page.permalink || url || structured_data.url}
+                author={page.author || structured_data.author || config.author}
                 publisher={structured_data.publisher || config.title}
                 publisherLogo={structured_data.publisher_logo || config.logo}
                 date={page.date}

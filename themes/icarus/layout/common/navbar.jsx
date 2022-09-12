@@ -30,11 +30,7 @@ class Navbar extends Component {
 
         let navbarLogo = '';
         if (logo) {
-            if (logo.text) {
-                navbarLogo = logo.text;
-            } else {
-                navbarLogo = <img src={logoUrl} alt={siteTitle} height="28" />;
-            }
+            navbarLogo = <img src={logoUrl} alt={siteTitle} height="28" />;
         } else {
             navbarLogo = siteTitle;
         }
@@ -43,7 +39,7 @@ class Navbar extends Component {
             <div class="container navbar-container">
                 <div class="navbar-brand justify-content-center">
                     <a class="navbar-item navbar-logo" href={siteUrl}>
-                        {navbarLogo}
+                        {navbarLogo}<span class="is-hidden-mobile">&nbsp;{siteTitle}</span>
                     </a>
                 </div>
                 <div class="navbar-menu">
@@ -106,7 +102,7 @@ module.exports = cacheComponent(Navbar, 'common.navbar', props => {
 
     return {
         logo,
-        logoUrl: url_for(logo),
+        logoUrl: url_for(logo.image),
         siteUrl: url_for('/'),
         siteTitle: title,
         menu,

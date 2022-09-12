@@ -1,11 +1,11 @@
 function getPageLanguages () {
   /**
    * Extract page info
-   * @param page
+   * @param post
    * @returns {{lang: String, key: String, name: String}|null}
    */
-  function pInfo (page) {
-    const currentFolders = page.path.split('/')
+  function pInfo (post) {
+    const currentFolders = post.path.split('/')
 
     if (0 === currentFolders.length) {
       return null
@@ -14,13 +14,18 @@ function getPageLanguages () {
     const lang = currentFolders.shift()
     let key
 
-    if (lang !== page.lang) {
+    if (lang !== post.lang) {
       // do not start by language
       return null
     }
 
-    if (page.contentId !== undefined) {
-      key = page.contentId
+    if (post.incomplete) {
+      // do not search within incomplete pages
+      return null
+    }
+
+    if (post.contentId !== undefined) {
+      key = post.contentId
     } else {
       key = currentFolders.join('/')
     }
@@ -38,7 +43,8 @@ function getPageLanguages () {
     return {
       lang: lang,
       key: key,
-      name: name
+      name: name,
+      incomplete: post.incomplete ?? null
     }
   }
 
@@ -67,6 +73,7 @@ function getPageLanguages () {
   return versions
 }
 
+// noinspection JSUnresolvedVariable
 hexo.extend.helper.register('getPageLanguages', getPageLanguages)
 
 module.exports = getPageLanguages
