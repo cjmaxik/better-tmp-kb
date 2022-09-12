@@ -43,8 +43,7 @@ function getPageLanguages () {
     return {
       lang: lang,
       key: key,
-      name: name,
-      incomplete: post.incomplete ?? null
+      name: name
     }
   }
 
